@@ -1,0 +1,23 @@
+{
+  "name": "js-translator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "translator.js",
+  "scripts": {
+    "add": "babel-node ./translator.js ../07/StackArithmetic/SimpleAdd/SimpleAdd.vm",
+    "addD": "babel-node ./translator.js ../07/StackArithmetic/SimpleAdd",
+    "st": "babel-node ./translator.js ../07/StackArithmetic/StackTest/StackTest.vm",
+    "stD": "babel-node ./translator.js ../07/StackArithmetic/StackTest",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
